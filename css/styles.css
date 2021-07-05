@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial Black';
+  /* font-weight: bold; */
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.big-title {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.color-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title Section  */
+/* Only on ID title, we want class container-fluid has top padding 3% */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: "bold";
+  /* padding-bottom: 4.5rem; */
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin: 2rem 0;
+}
+
+.download-button {
+  margin-right: 2rem;
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  /* default static, will not make iPhone image hide behind anything */
+  position: absolute;
+  left: 30%;
+}
+
+@media (max-width:1028px) {
+
+  /* question: why it doesn't bring h1 text to center? */
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* features Section */
+#features {
+  /* padding: 7% 15%; */
+  /* if no this, iPhone img will be on top of features section. */
+  /* following 2 lines make features section sit on top of iPhone img */
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  color: #cf8172;
+  margin: 1rem 0;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  padding-bottom: 3%;
+  background-color: #ef8172;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 0px 20px 5px;
+}
+
+/* Pricing  */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-text {
+  font-size: 3rem;
+  height: 1.5;
+}
+
+.card-deck {
+  padding: 3% 0;
+}
+
+/* Call to Action */
+#cta {}
+
+/* Footer */
+.social-icon {
+  margin: 20px 10px;
+}
